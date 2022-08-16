@@ -1,1 +1,2 @@
-web: uvicorn main:app --app-dir=app --host=0.0.0.0 --port=${PORT:-8000} --workers=1
+web: python app/main.py
+worker: python app/main.py
